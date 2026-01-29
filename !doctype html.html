@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Username form</title>
+    <style>
+      /* label + input-a side-by-side */
+      .field {
+        display: inline-block;   /* or inline-flex */
+        margin-right: 12px;
+        vertical-align: middle;
+      }
+      label {
+        margin-right: 6px;
+      }
+      input[type="text"], input[type="password"] {
+        padding: 4px 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="field">
+        <label for="user">user name:</label>
+        <input id="user" name="user" type="text" placeholder="enter the user name">
+      </div>
+
+      <div class="field">
+        <label for="pw">password:</label>
+        <input id="pw" name="password" type="password" placeholder="">
+      </div>
+
+      <div class="field">
+        <input type="submit" value="submit">
+      </div>
+    </form>
+  </body>
+</html>
