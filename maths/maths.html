@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <script>
+        function add() {
+            var num1 = parseFloat(prompt("Enter the first value", 0));
+            var num2 = parseFloat(prompt("Enter the second value", 0));
+            var result = num1 + num2;
+            alert("Sum of the two numbers is: " + result);
+        }
+
+        function divide() {
+            var num1 = parseFloat(prompt("Enter the first value", 0));
+            var num2 = parseFloat(prompt("Enter the second value", 0));
+            if (num2 === 0) {
+                alert("Error: Division by zero is not allowed.");
+                return;
+            }
+            var result = num1 / num2;
+            alert("The division is: " + result);
+        }
+
+        function subtract() {
+            var num1 = parseFloat(prompt("Enter the first value", 0));
+            var num2 = parseFloat(prompt("Enter the second value", 0));
+            var result = num1 - num2;
+            alert("The subtraction is: " + result);
+        }
+
+        function modulus() {
+            var num1 = parseFloat(prompt("Enter the first value", 0));
+            var num2 = parseFloat(prompt("Enter the second value", 0));
+            if (num2 === 0) {
+                alert("Error: Modulus by zero is not allowed.");
+                return;
+            }
+            var result = num1 % num2;
+            alert("Modulus is: " + result);
+        }
+    </script>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <table border="1" cellpadding="10">
+        <tr>
+            <td><input type="button" value="ADD" onclick="add();"></td>
+            <td><input type="button" value="DIVIDE" onclick="divide();"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="SUBTRACT" onclick="subtract();"></td>
+            <td><input type="button" value="MODULUS" onclick="modulus();"></td>
+        </tr>
+    </table>
+</body>
+</html>
