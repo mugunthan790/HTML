@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Objects</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+
+document.write("DATE OBJECT");
+document.write("<br>");
+document.write("************");
+document.write("<br>");
+
+var d = new Date();
+document.write(d.getDate());
+document.write(".");
+document.write(d.getMonth() + 1);
+document.write(".");
+document.write(d.getFullYear());
+
+document.write("<br><br>");
+
+document.write("NUMBER OBJECT");
+document.write("<br>");
+document.write("*************");
+document.write("<br>");
+
+var x = 10;
+var y = new Number(10);
+
+document.write(typeof x);   // number
+document.write("<br>");
+document.write(typeof y);   // object
+
+document.write("<br><br>");
+
+document.write("EVENT OBJECT");
+document.write("<br>");
+document.write("************");
+document.write("<br><br>");
+
+function GetEventType(eventObj) {
+    alert("The Type of the Event: " + eventObj.type);
+}
+
+</script>
+
+<button onclick="GetEventType(event)">Click on me!</button>
+
+</body>
+</html>
