@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+            function add(){
+                var num1=parseInt(prompt("Enter the 1st value:",0));
+                var num2=parseInt(prompt("Enter the 2nd value:",0));
+                var result=num1+num2;
+                alert("The result is"+result);
+            }
+             function subtract(){
+                var num1=parseInt(prompt("Enter the 1st value:",0));
+                var num2=parseInt(prompt("Enter the 2nd value:",0));
+                var result=num1-num2;
+                alert("The result is"+result);
+            }
+             function multiplication(){
+                var num1=parseInt(prompt("Enter the 1st value:",0));
+                var num2=parseInt(prompt("Enter the 2nd value:",0));
+                var result=num1*num2;
+                alert("The result is"+result);
+            }
+             function modulus(){
+                var num1=parseInt(prompt("Enter the 1st value:",0));
+                var num2=parseInt(prompt("Enter the 2nd value:",0));
+                var result=num1%num2;
+                alert("The result is"+result);
+            }
+        </script>
+    </head>
+    <table>
+        <tr>
+            <td><input type="button" value="add" onclick="add();"></td>
+            <td><input type="button" value="subtraction" onclick="subtract();"></td>
+        </tr>
+        <tr>
+            <td>
+                <td><input type="button" value="multiplication" onclick="multiplication();"></td>
+                <td><input type="button" value="modules" onclick="modulus();"></td>
+            </td>
+        </tr>
+    </table>
+</html>
